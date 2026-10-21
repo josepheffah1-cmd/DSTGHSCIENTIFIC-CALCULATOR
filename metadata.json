@@ -1,0 +1,6 @@
+{
+  "name": "DSTGH Scientific Calculator",
+  "description": "Digital Solution Tech Ghana (DSTGH-SC991) professional 417+ function scientific calculator featuring fractions, calculus, equation solving, statistics, matrices, vectors, base-N, unit conversion, formula library, and educational Study Mode.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

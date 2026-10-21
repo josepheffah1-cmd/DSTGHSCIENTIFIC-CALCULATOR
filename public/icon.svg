@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="dstghGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2459D6" />
+      <stop offset="50%" stop-color="#123EA8" />
+      <stop offset="100%" stop-color="#082765" />
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#DCE8D5" />
+      <stop offset="100%" stop-color="#C2D6B8" />
+    </linearGradient>
+    <filter id="subtleDrop" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle with shadow -->
+  <rect x="24" y="24" width="464" height="464" rx="96" fill="url(#dstghGrad)" filter="url(#subtleDrop)"/>
+  
+  <!-- Outer metallic rim border -->
+  <rect x="24" y="24" width="464" height="464" rx="96" fill="none" stroke="#60A5FA" stroke-width="6" opacity="0.4"/>
+
+  <!-- Calculator LCD screen shape -->
+  <rect x="76" y="80" width="360" height="130" rx="16" fill="url(#screenGrad)" stroke="#22381F" stroke-width="4"/>
+  
+  <!-- Mini indicators on screen -->
+  <text x="96" y="112" font-family="monospace" font-size="16" font-weight="bold" fill="#1C3018">DEG</text>
+  <text x="148" y="112" font-family="monospace" font-size="16" font-weight="bold" fill="#1C3018">MATH</text>
+  
+  <!-- Display expression & result in LCD style font -->
+  <text x="96" y="142" font-family="monospace" font-size="22" fill="#294423">sin(30°) × 25</text>
+  <text x="416" y="190" font-family="monospace" font-size="34" font-weight="bold" text-anchor="end" fill="#142611">12.5</text>
+
+  <!-- Keypad grid simulation -->
+  <!-- Row 1: Function keys -->
+  <rect x="76" y="235" width="60" height="36" rx="8" fill="#1E40AF"/>
+  <text x="106" y="258" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#FFD21F">SHIFT</text>
+
+  <rect x="151" y="235" width="60" height="36" rx="8" fill="#1E40AF"/>
+  <text x="181" y="258" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#F472B6">ALPHA</text>
+
+  <circle cx="256" cy="265" r="28" fill="#082765" stroke="#3B82F6" stroke-width="3"/>
+  <path d="M256 244 L260 250 L252 250 Z" fill="#93C5FD"/>
+  <path d="M256 286 L260 280 L252 280 Z" fill="#93C5FD"/>
+  <path d="M235 265 L241 261 L241 269 Z" fill="#93C5FD"/>
+  <path d="M277 265 L271 261 L271 269 Z" fill="#93C5FD"/>
+
+  <rect x="301" y="235" width="60" height="36" rx="8" fill="#1E40AF"/>
+  <text x="331" y="258" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#FFFFFF">MODE</text>
+
+  <rect x="376" y="235" width="60" height="36" rx="8" fill="#E85D04"/>
+  <text x="406" y="258" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#FFFFFF">ON</text>
+
+  <!-- Number keys and scientific keys rows -->
+  <g fill="#FFFFFF" opacity="0.95">
+    <rect x="76" y="300" width="76" height="42" rx="8"/>
+    <rect x="168" y="300" width="76" height="42" rx="8"/>
+    <rect x="260" y="300" width="76" height="42" rx="8"/>
+    <rect x="76" y="356" width="76" height="42" rx="8"/>
+    <rect x="168" y="356" width="76" height="42" rx="8"/>
+    <rect x="260" y="356" width="76" height="42" rx="8"/>
+    <rect x="76" y="412" width="76" height="42" rx="8"/>
+    <rect x="168" y="412" width="76" height="42" rx="8"/>
+    <rect x="260" y="412" width="76" height="42" rx="8"/>
+  </g>
+
+  <!-- Numbers text -->
+  <g font-family="sans-serif" font-size="20" font-weight="bold" fill="#0F172A" text-anchor="middle">
+    <text x="114" y="328">7</text><text x="206" y="328">8</text><text x="298" y="328">9</text>
+    <text x="114" y="384">4</text><text x="206" y="384">5</text><text x="298" y="384">6</text>
+    <text x="114" y="440">1</text><text x="206" y="440">2</text><text x="298" y="440">3</text>
+  </g>
+
+  <!-- Orange DEL & AC buttons -->
+  <rect x="352" y="300" width="84" height="42" rx="8" fill="#E85D04"/>
+  <text x="394" y="328" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">DEL</text>
+  <rect x="352" y="356" width="84" height="42" rx="8" fill="#E85D04"/>
+  <text x="394" y="384" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">AC</text>
+
+  <!-- Blue Equal button -->
+  <rect x="352" y="412" width="84" height="42" rx="8" fill="#2459D6" stroke="#93C5FD" stroke-width="2"/>
+  <text x="394" y="440" font-family="sans-serif" font-size="24" font-weight="bold" fill="#FFFFFF" text-anchor="middle">=</text>
+
+  <!-- Bottom Brand Text -->
+  <text x="256" y="480" font-family="sans-serif" font-size="13" font-weight="bold" letter-spacing="3" fill="#93C5FD" text-anchor="middle">DSTGH-SC991</text>
+</svg>
